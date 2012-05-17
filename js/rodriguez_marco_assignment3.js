@@ -99,3 +99,7 @@ var dynoTime = {
 // function
 console.log("There will be lots of elements when it comes to dialing in a car's performance, but the three main ones I will be looking for are:");
 console.log(trackPrep());
+
+// json
+dynoTime.numbers(json);
+
