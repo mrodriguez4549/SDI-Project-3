@@ -91,7 +91,7 @@ var dynoTime = {
 	console.log("With few adjustments, we logged in our best 60ft out the hole at " + best60 + " with a best ET of " + bestEt + " at " + bestMph + " mph" );
 	}
 };
-// function
+// functions
 console.log("There will be lots of elements when it comes to dialing in a car's performance, but the three main ones I will be looking for are:");
 console.log(trackPrep());
 
