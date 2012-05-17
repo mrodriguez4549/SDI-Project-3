@@ -49,3 +49,49 @@ var amountPerPlate = 4,
   }
   return totalWelds;
 };
+
+// return array 
+
+function trackPrep() {
+	var dialIn = [];
+	dialIn[0] = "60ft out the hole";
+	dialIn[1] = " overall ET in the 1/4 mile";
+	dialIn[2] = " overall mph";
+
+	return dialIn.join(); // return array
+}
+
+// array function
+
+var dynoTime = function() {
+var power;
+	console.log( "Now that we are approved by NHRA, it's time for some Dyno Tuning to see the numbers it puts out:");
+	for(var i = 0; i < horsePower.length; i++){
+		console.log(horsePower[i] + " hp @ " + rpm[i] + " RPMs " + "with " + boostLb[i] + " pounds of Boost.");
+	}
+	power = "I think that " + horsePower[7] + " horses @ " + rpm[7] + " RPMs with only " + boostLb[7] + " pounds of boost is not too shabby for it\'s first dyno pull!";
+	return power;
+}
+
+var power = dynoTime();
+console.log(power);
+console.log("With Wraith pumping out " + horsePower[7] + " horses, we are confident in kicking ass in the Fall Nationals this year!");
+console.log("Now that we have our dyno numbers, we can now go to the track and get the car\'s suspension, chassis, boost and launch dialed in");
+	console.log(" ");
+// calling property object
+
+var dynoTime = {
+	numbers: function (json) {
+		console.log("Now that we have our dyno numbers, we can make comparisons when fine tunning our car's dial in performance at the track.");
+		console.log("After a long day of dialing the car and numerous runs down the track, we have some numerous to log them in.");
+
+		console.log("Pass: " + testing.pass + ", Boost: " + testing.boost + "lbs, 60ft: " + testing.sixtyft + ", 1/8 mile: = " + testing.eightmile + ", 1/4 mile = " + testing.quartermile + ", mph = " + testing.mph); 
+	}
+	console.log("After those runs, we have logged our numbers in and will determine where the car needs tweaking.");
+	console.log("With few adjustments, we logged in our best 60ft out the hole at " + best60 + " with a best ET of " + bestEt + " at " + bestMph + " mph" );
+	}
+};
+// function
+console.log("There will be lots of elements when it comes to dialing in a car's performance, but the three main ones I will be looking for are:");
+console.log(trackPrep());
+
