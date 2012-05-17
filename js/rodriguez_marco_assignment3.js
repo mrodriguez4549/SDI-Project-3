@@ -37,6 +37,7 @@ projectWraith(2900);
 
 //
 
+var weldsNeeded = function(welds) {
 var amountPerPlate = 4,
     totalWelds;
   if (welds < amountPerPlate) {
@@ -45,4 +46,6 @@ var amountPerPlate = 4,
   }
   else {
       totalWelds = Math.floor(welds / amountPerPlate);
-  }	
+  }
+  return totalWelds;
+};
