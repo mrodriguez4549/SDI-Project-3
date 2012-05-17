@@ -63,6 +63,10 @@ function trackPrep() {
 
 // array function
 
+var horsePower = [150, 300, 450, 600, 750, 900, 1050, 1200];
+var rpm = [1000, 2000, 3000, 4000, 5000, 6000, 7000, 8000];
+var boostLb = [2, 4, 6, 8, 10, 12, 14, 16];
+
 var dynoTime = function() {
 var power;
 	console.log( "Now that we are approved by NHRA, it's time for some Dyno Tuning to see the numbers it puts out:");
